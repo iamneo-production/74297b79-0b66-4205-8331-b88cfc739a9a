@@ -1,0 +1,126 @@
+{
+    "loggedUser": {},
+    "users": [
+      {
+        "id": 1,
+        "name": "xyz",
+        "email": "xyz@gmail.com",
+        "password": "xyz"
+      }
+    ],
+    "categories": [
+      {
+          "id": 0,
+          "name": "transfer",
+          "type": "TRANSFER"
+        },
+        {
+          "id": 1,
+          "userId": 1,
+          "name": "Rent",
+          "type": "EXPENSE"
+        },
+      {
+        "id": 2,
+        "userId": 1,
+        "name": "Food",
+        "type": "EXPENSE"
+      },
+      {
+        "id": 3,
+        "userId": 1,
+        "name": "Salary",
+        "type": "INCOME"
+      },
+      {
+        "id": 4,
+        "userId": 1,
+        "name": "Refunds",
+        "type": "INCOME"
+      },
+      {
+        "userId": 1,
+        "name": "Grants",
+        "type": "INCOME",
+        "id": 5
+      }
+    ],
+    "accounts": [
+      {
+        "id": 1,
+        "userId": 1,
+        "name": "Current",
+        "initAmmount": 1000,
+        "balance": 600
+      },
+      {
+        "id": 2,
+        "userId": 1,
+        "name": "Saving",
+        "initAmmount": 0,
+        "balance": 200
+      }
+    ],
+    "budgets": [
+      {
+        "id": 1,
+        "userId": 1,
+        "categoryId": 2,
+        "limit": 500,
+        "dateTime": "Tue Aug 01 2023 00:00:00 GMT+0530 (India Standard Time)"
+      }
+    ],
+    "transactions": [
+      {
+        "id": 1,
+        "userId": 1,
+        "type": "INCOME",
+        "price": 100,
+        "comment": "refund",
+        "accountId": 1,
+        "categoryId": 4,
+        "dateTime": "Wed Jan 29 2023 01:12:48 GMT+0530 (India Standard Time)"
+      },
+      {
+        "id": 2,
+        "userId": 1,
+        "type": "EXPENSE",
+        "price": 150,
+        "comment": "food",
+        "accountId": 1,
+        "categoryId": 2,
+        "dateTime": "Wed Aug 29 2023 02:12:48 GMT+0530 (India Standard Time)"
+      },
+      {
+        "id": 3,
+        "userId": 1,
+        "type": "EXPENSE",
+        "price": 50,
+        "comment": "food",
+        "accountId": 1,
+        "categoryId": 2,
+        "dateTime": "Wed Aug 29 2023 03:12:48 GMT+0530 (India Standard Time)"
+      },
+      {
+        "id": 4,
+        "userId": 1,
+        "type": "EXPENSE",
+        "price": 100,
+        "comment": "rent",
+        "accountId": 1,
+        "categoryId": 1,
+        "dateTime": "Wed Aug 29 2023 04:12:48 GMT+0530 (India Standard Time)"
+      },
+      {
+        "id": 5,
+        "userId": 1,
+        "type": "TRANSFER",
+        "price": 200,
+        "comment": "watch",
+        "categoryId": 0,
+        "accountId": 1,
+        "accountId_to": 2,
+        "dateTime": "Wed Aug 29 2023 05:12:48 GMT+0530 (India Standard Time)"
+      }
+    ]
+  }
